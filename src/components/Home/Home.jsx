@@ -83,7 +83,6 @@ const Home = () => {
           </button>
         </div>
       </form>
-
       <div className="items">
         <MapContainer center={[latitude, longitude]} zoom={2} ref={mapRef}>
           <TileLayer
@@ -101,7 +100,7 @@ const Home = () => {
       </div>
 
       <div className="details-container">
-        <h1>Details</h1>
+        <h1>Location details</h1>
         {loading && (
           <div className="linear-loader">
             <div></div>
@@ -126,7 +125,7 @@ const Home = () => {
             <p>Org: {location.org}</p>
             <p>As: {location.as}</p>
           </div>
-        ):<h4>Please check the IP address .</h4>}
+        ):<h4 style={{color:"red",marginTop:"20px"}}>Please check the IP address .</h4>}
       </div>
     </div>
   )

@@ -69,11 +69,12 @@ const Home = () => {
       <form onSubmit={handleSubmit}>
         <div className="input">
           <input
-            type="text"
+           type="number" 
             name="ip"
             placeholder="Enter Ip address"
             value={inputId.ip}
             onChange={handleIp}
+            autocomplete="off"
             required
           />
           <button>

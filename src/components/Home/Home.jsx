@@ -43,6 +43,7 @@ const Home = () => {
   }
 
   useEffect(() => {
+    setLoading(true)
     async function fetchData() {
       try {
         const response = await axios.get(`https://pro.ip-api.com/json/${toFind}?key=${API_KEY}`);

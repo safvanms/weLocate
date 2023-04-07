@@ -21,7 +21,7 @@
 
 .details {
   margin: 20px 0px 50px 0px;
-  width: 300px;
+  width: 330px;
 }
 
 .details > * {
@@ -46,7 +46,7 @@ form{
   display: flex;
   justify-content: space-between;
 border: 1px solid black ;
-width: 220px;
+width: 260px;
 height: 40px;
 padding: 5px;
 border-radius: 7px;
@@ -61,6 +61,7 @@ form>div>input{
 form>div>button{
   background-color: transparent;
   border: none;
+  color: black;
 }
 
 input[type=number]::-webkit-inner-spin-button,
